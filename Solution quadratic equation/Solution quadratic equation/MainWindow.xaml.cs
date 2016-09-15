@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using QuadraticEquation;
+using System;
 
 namespace Solution_quadratic_equation
 {
@@ -27,6 +16,15 @@ namespace Solution_quadratic_equation
 
         private void btnSolve_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                QuadraticEq KvUr = new QuadraticEq(tbA.Text, tbB.Text, tbC.Text);
+                MessageBox.Show(KvUr.CalculateRoot());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }

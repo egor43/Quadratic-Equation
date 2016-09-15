@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuadraticEquation
 {
-    public class QuadraticEquation
+    public class QuadraticEq
     {
         #region Поля
         private double a;
@@ -41,7 +41,7 @@ namespace QuadraticEquation
 
 
         #region Конструкторы
-        public QuadraticEquation(string a, string b, string c)
+        public QuadraticEq(string a, string b, string c)
         {
             A = a;
             B = b;
