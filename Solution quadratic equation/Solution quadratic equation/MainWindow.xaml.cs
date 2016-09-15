@@ -13,7 +13,8 @@ namespace Solution_quadratic_equation
         {
             InitializeComponent();
         }
-
+        //TODO: Доделать интерфейс.
+        //TODO: Документация и комментарии.
         private void btnSolve_Click(object sender, RoutedEventArgs e)
         {
             try
