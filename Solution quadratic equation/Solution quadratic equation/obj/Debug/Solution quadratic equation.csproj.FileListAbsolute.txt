@@ -1,0 +1,15 @@
+c:\users\egor_alena\documents\visual studio 2015\Projects\Solution quadratic equation\Solution quadratic equation\bin\Debug\Solution quadratic equation.exe.config
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\bin\Debug\Solution quadratic equation.exe.config
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\bin\Debug\Solution quadratic equation.exe
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\bin\Debug\Solution quadratic equation.pdb
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\MainWindow.g.cs
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\App.g.cs
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation_MarkupCompile.cache
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation_MarkupCompile.lref
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\MainWindow.baml
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation.g.resources
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution_quadratic_equation.Properties.Resources.resources
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation.csproj.GenerateResource.Cache
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation.exe
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation.pdb
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation.csprojResolveAssemblyReference.cache
