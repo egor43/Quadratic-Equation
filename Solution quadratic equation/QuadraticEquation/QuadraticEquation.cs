@@ -52,27 +52,17 @@ namespace QuadraticEquation
         #region Методы
         public string CalculateRoot()
         {
-            if(a==0)
-            {
-                if(b==0) Answer = "Решений нет";
-                else Answer = String.Format("Х={0}", (-c/b));
-            }
+
+            if ((a==0)&&(b==0)&&(c==0)) return Answer = "X - любое число";
+            if((a==0)&&(b==0)) return Answer = "Решений нет";
+            if (a == 0) return Answer = String.Format("X={0}", -c / b);
+            double Discriminant = Math.Pow(b, 2) - 4 * a * c;
+            if (Discriminant > 0) return Answer = String.Format("Х1={0} Х2={1}", ((-b + Math.Sqrt(Discriminant)) / 2 * a), ((-b - Math.Sqrt(Discriminant)) / 2 * a));
             else
             {
-
+                if (Discriminant == 0) return Answer = String.Format("Х1={0}", ((-b + Math.Sqrt(Discriminant)) / 2 * a));
+                else return Answer = "Решений нет";
             }
-
-            //double Discriminant = Math.Pow(b, 2) - 4 * a * c;
-            //if (Discriminant > 0) Answer = String.Format("Х1={0} Х2={1}", ((-b + Math.Sqrt(Discriminant)) / 2 * a), ((-b - Math.Sqrt(Discriminant)) / 2 * a));
-            //else
-            //{
-            //    if ((Discriminant == 0)&&(a!=0)) Answer = String.Format("Х1={0}", ((-b + Math.Sqrt(Discriminant)) / 2 * a));
-            //    else
-            //    {
-            //        Answer = "Решений нет";
-            //    }
-            //}
-            return Answer;
         }
         #endregion
     }
