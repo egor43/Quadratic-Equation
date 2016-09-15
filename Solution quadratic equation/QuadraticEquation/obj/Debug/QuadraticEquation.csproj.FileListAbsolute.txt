@@ -1,0 +1,4 @@
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\bin\Debug\QuadraticEquation.dll
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\bin\Debug\QuadraticEquation.pdb
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.dll
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.pdb
