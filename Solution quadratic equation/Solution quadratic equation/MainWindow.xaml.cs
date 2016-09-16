@@ -13,18 +13,17 @@ namespace Solution_quadratic_equation
         {
             InitializeComponent();
         }
-        //TODO: Доделать интерфейс.
         //TODO: Документация и комментарии.
         private void btnSolve_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 QuadraticEq KvUr = new QuadraticEq(tbA.Text, tbB.Text, tbC.Text);
-                MessageBox.Show(KvUr.CalculateRoot());
+                tbAnswer.Text=KvUr.CalculateRoot();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                tbAnswer.Text=ex.Message;
             }
 
         }
