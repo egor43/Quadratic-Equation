@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("QuadraticEquation")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("КГТУ")]
 [assembly: AssemblyProduct("QuadraticEquation")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Мышко Егор")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

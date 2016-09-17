@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("Solution quadratic equation")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("КГТУ")]
 [assembly: AssemblyProduct("Solution quadratic equation")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Мышко Егор")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
