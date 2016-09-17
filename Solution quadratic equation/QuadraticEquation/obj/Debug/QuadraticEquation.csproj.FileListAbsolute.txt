@@ -8,3 +8,4 @@ C:\Users\egor4_000\Desktop\Егор\GitRepository\Quadratic-Equation\Solution qu
 C:\Users\egor4_000\Desktop\Егор\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.dll
 C:\Users\egor4_000\Desktop\Егор\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.pdb
 D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\bin\Debug\QuadraticEquation.XML
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.csprojResolveAssemblyReference.cache

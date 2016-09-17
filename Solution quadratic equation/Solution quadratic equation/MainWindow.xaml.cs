@@ -9,19 +9,27 @@ namespace Solution_quadratic_equation
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Стандартная инициализация компонентов.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
         }
-        //TODO: Документация и комментарии.
+
+        /// <summary>
+        /// Обработчик события нажатия на кнопку "Результат"(btnSolve)
+        /// </summary>
+        /// <param name="sender">Объект вызвавший событие</param>
+        /// <param name="e">Дополнительные параметры</param>
         private void btnSolve_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                QuadraticEq KvUr = new QuadraticEq(tbA.Text, tbB.Text, tbC.Text);
+                QuadraticEq KvUr = new QuadraticEq(tbA.Text, tbB.Text, tbC.Text); //Через конструктор нициализируем поля экземпляра класса. 
                 tbAnswer.Text=KvUr.CalculateRoot();
             }
-            catch (Exception ex)
+            catch (Exception ex) //Возникает в случае попытки ввода неверного значения в поле. 
             {
                 tbAnswer.Text=ex.Message;
             }

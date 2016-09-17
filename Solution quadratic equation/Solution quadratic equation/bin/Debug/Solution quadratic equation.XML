@@ -30,6 +30,18 @@
             MainWindow
             </summary>
         </member>
+        <member name="M:Solution_quadratic_equation.MainWindow.#ctor">
+            <summary>
+            Стандартная инициализация компонентов.
+            </summary>
+        </member>
+        <member name="M:Solution_quadratic_equation.MainWindow.btnSolve_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Обработчик события нажатия на кнопку "Результат"(btnSolve)
+            </summary>
+            <param name="sender">Объект вызвавший событие</param>
+            <param name="e">Дополнительные параметры</param>
+        </member>
         <member name="M:Solution_quadratic_equation.MainWindow.InitializeComponent">
             <summary>
             InitializeComponent

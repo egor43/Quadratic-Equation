@@ -12,6 +12,8 @@
         <member name="P:QuadraticEquation.QuadraticEq.A">
             <summary>
             Получает строковое представление переменной "а". Проверяет на возможность конвертации входящего значения в тип "double".
+            При успешной конвертации - присваивает полю "а" входящее значение.
+            При не успешной конвертации - выбрасывает исключение Exception("Неверное значение "a"").
             </summary>
         </member>
         <member name="P:QuadraticEquation.QuadraticEq.B">
@@ -27,6 +29,26 @@
             При успешной конвертации - присваивает полю "c" входящее значение.
             При не успешной конвертации - выбрасывает исключение Exception("Неверное значение "c""). 
             </summary>
+        </member>
+        <member name="P:QuadraticEquation.QuadraticEq.Answer">
+            <summary>
+            get - Возвращает строковое представление результата вычислений.
+            private set - Принимает строковое представление результата вычислений. (Доступен только внутри класса).
+            </summary>
+        </member>
+        <member name="M:QuadraticEquation.QuadraticEq.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Инициализирует поля класса QuadraticEq.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="c"></param>
+        </member>
+        <member name="M:QuadraticEquation.QuadraticEq.CalculateRoot">
+            <summary>
+            Вычисляет корни квадратного уравнения.
+            </summary>
+            <returns>Строковое представление результата вычислений.</returns>
         </member>
     </members>
 </doc>
