@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuadraticEquation</name>
+    </assembly>
+    <members>
+        <member name="T:QuadraticEquation.QuadraticEq">
+            <summary>
+            Класс QuadraticEq представляет метод для вычисления корней уравнения второй степени
+            </summary>
+        </member>
+        <member name="P:QuadraticEquation.QuadraticEq.A">
+            <summary>
+            Получает строковое представление переменной "а". Проверяет на возможность конвертации входящего значения в тип "double".
+            </summary>
+        </member>
+        <member name="P:QuadraticEquation.QuadraticEq.B">
+            <summary>
+            Получает строковое представление переменной "b". Проверяет на возможность конвертации входящего значения в тип "double".
+            При успешной конвертации - присваивает полю "b" входящее значение.
+            При не успешной конвертации - выбрасывает исключение Exception("Неверное значение "b"").
+            </summary>
+        </member>
+        <member name="P:QuadraticEquation.QuadraticEq.C">
+            <summary>
+            Получает строковое представление переменной "c". Проверяет на возможность конвертации входящего значения в тип "double".
+            При успешной конвертации - присваивает полю "c" входящее значение.
+            При не успешной конвертации - выбрасывает исключение Exception("Неверное значение "c""). 
+            </summary>
+        </member>
+    </members>
+</doc>

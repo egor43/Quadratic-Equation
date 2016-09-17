@@ -31,3 +31,5 @@ C:\Users\egor4_000\Desktop\Егор\GitRepository\Quadratic-Equation\Solution qu
 D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\bin\Debug\QuadraticEquation.dll
 D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\bin\Debug\QuadraticEquation.pdb
 D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\obj\Debug\Solution quadratic equation.csprojResolveAssemblyReference.cache
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\bin\Debug\Solution quadratic equation.XML
+D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\Solution quadratic equation\bin\Debug\QuadraticEquation.xml
