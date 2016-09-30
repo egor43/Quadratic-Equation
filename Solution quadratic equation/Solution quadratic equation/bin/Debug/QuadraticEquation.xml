@@ -36,13 +36,33 @@
             private set - Принимает строковое представление результата вычислений. (Доступен только внутри класса).
             </summary>
         </member>
+        <member name="P:QuadraticEquation.QuadraticEq.X1">
+            <summary>
+              /// get - Возвращает строковое представление корня уравнения Х1.
+            private set - Принимает строковое представление корня уравнения Х1. (Доступен только внутри класса).
+            </summary>
+        </member>
+        <member name="P:QuadraticEquation.QuadraticEq.X2">
+            <summary>
+            get - Возвращает строковое представление корня уравнения Х2.
+            private set - Принимает строковое представление корня уравнения Х2. (Доступен только внутри класса).
+            </summary>
+        </member>
         <member name="M:QuadraticEquation.QuadraticEq.#ctor(System.String,System.String,System.String)">
             <summary>
             Инициализирует поля класса QuadraticEq.
             </summary>
-            <param name="a"></param>
-            <param name="b"></param>
-            <param name="c"></param>
+            <param name="a">параметр "а"</param>
+            <param name="b">параметр "b"</param>
+            <param name="c">параметр "с"</param>
+        </member>
+        <member name="M:QuadraticEquation.QuadraticEq.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Инициализирует поля класса QuadraticEq.
+            </summary>
+            <param name="a">параметр "а"</param>
+            <param name="b">параметр "b"</param>
+            <param name="c">параметр "с"</param>
         </member>
         <member name="M:QuadraticEquation.QuadraticEq.CalculateRoot">
             <summary>

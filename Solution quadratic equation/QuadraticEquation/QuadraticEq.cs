@@ -63,6 +63,18 @@ namespace QuadraticEquation
         /// private set - Принимает строковое представление результата вычислений. (Доступен только внутри класса).
         /// </summary>
         public string Answer { get; private set; }
+
+        /// <summary>
+        ///   /// get - Возвращает строковое представление корня уравнения Х1.
+        /// private set - Принимает строковое представление корня уравнения Х1. (Доступен только внутри класса).
+        /// </summary>
+        public string X1 { get; private set; }
+
+        /// <summary>
+        /// get - Возвращает строковое представление корня уравнения Х2.
+        /// private set - Принимает строковое представление корня уравнения Х2. (Доступен только внутри класса).
+        /// </summary>
+        public string X2 { get; private set; }
         #endregion
 
 
@@ -71,14 +83,27 @@ namespace QuadraticEquation
         /// <summary>
         /// Инициализирует поля класса QuadraticEq.
         /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <param name="c"></param>
+        /// <param name="a">параметр "а"</param>
+        /// <param name="b">параметр "b"</param>
+        /// <param name="c">параметр "с"</param>
         public QuadraticEq(string a, string b, string c)
         {
             A = a;
             B = b;
             C = c;
+        }
+
+        /// <summary>
+        /// Инициализирует поля класса QuadraticEq.
+        /// </summary>
+        /// <param name="a">параметр "а"</param>
+        /// <param name="b">параметр "b"</param>
+        /// <param name="c">параметр "с"</param>
+        public QuadraticEq(double a, double b, double c)
+        {
+            A = a.ToString();
+            B = b.ToString();
+            C = c.ToString();
         }
         #endregion
 
@@ -90,14 +115,14 @@ namespace QuadraticEquation
         /// <returns>Строковое представление результата вычислений.</returns>
         public string CalculateRoot()
         {
-            if ((a==0)&&(b==0)&&(c==0)) return Answer = "X - любое число";
-            if((a==0)&&(b==0)) return Answer = "Решений нет";
-            if (a == 0) return Answer = String.Format("X={0:0.####}", -c / b); //Возвращаем форматированный результат, предварительно записав его в автосвойство Answer.
-            double Discriminant = Math.Pow(b, 2) - 4 * a * c;
-            if (Discriminant > 0) return Answer = String.Format("Х1={0:0.####} Х2={1:0.####}", ((-b + Math.Sqrt(Discriminant)) / (2 * a)), ((-b - Math.Sqrt(Discriminant)) / (2 * a))); //Параметры метода "Format": 1 параметр - шаблон форматирования, 2 параметр - первый корень уравнения, 3 параметр - второй корень уравнения.
+            if ((a == 0) && (b == 0) && (c == 0)) return Answer = "X - любое число";
+            if ((a == 0) && (b == 0)) return Answer = "Решений нет";
+            if (a == 0) return Answer = String.Format("X={0:0.####}", X1=Convert.ToString(-c / b)); //Возвращаем форматированный результат, предварительно записав его в автосвойство Answer.
+            double Discriminant = b * b - 4 * a * c;
+            if (Discriminant > 0) return Answer = String.Format("Х1={0:0.####} Х2={1:0.####}", X1=Convert.ToString(((-b + Math.Sqrt(Discriminant)) / (2 * a))), X2=Convert.ToString(((-b - Math.Sqrt(Discriminant)) / (2 * a)))); //Параметры метода "Format": 1 параметр - шаблон форматирования, 2 параметр - первый корень уравнения, 3 параметр - второй корень уравнения.
             else
             {
-                if (Discriminant == 0) return Answer = String.Format("Х1={0:0.####}", ((-b + Math.Sqrt(Discriminant)) / (2 * a)));
+                if (Discriminant == 0) return Answer = String.Format("Х1={0:0.####}", X1 = Convert.ToString((-b / (2 * a))));
                 else return Answer = "Решений нет";
             }
         }
