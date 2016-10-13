@@ -15,6 +15,8 @@ namespace QuadraticEquation
         private double a;
         private double b;
         private double c;
+        private double x1;
+        private double x2;
         #endregion
 
         #region Свойства
@@ -59,24 +61,53 @@ namespace QuadraticEquation
         }
 
         /// <summary>
-        /// get - Возвращает строковое представление результата вычислений.
-        /// private set - Принимает строковое представление результата вычислений. (Доступен только внутри класса).
-        /// </summary>
-        public string Answer { get; private set; }
-
-        /// <summary>
         ///   /// get - Возвращает строковое представление корня уравнения Х1.
         /// private set - Принимает строковое представление корня уравнения Х1. (Доступен только внутри класса).
         /// </summary>
-        public string X1 { get; private set; }
+        public double X1
+        {
+            get
+            {
+                if (Double.IsPositiveInfinity(x1))
+                {
+                    throw new Exception("Ошибка! \nЗначение x1 не подсчитано");
+                }
+                if (Double.IsNegativeInfinity(x1))
+                {
+                    throw new Exception("Решений нет.");
+                }
+                else return x1;
+            }
+            private set
+            {
+                x1 = value;
+            }
+        }
 
         /// <summary>
         /// get - Возвращает строковое представление корня уравнения Х2.
         /// private set - Принимает строковое представление корня уравнения Х2. (Доступен только внутри класса).
         /// </summary>
-        public string X2 { get; private set; }
+        public double X2
+        {
+            get
+            {
+                if (Double.IsPositiveInfinity(x2))
+                {
+                    throw new Exception("Ошибка! \nЗначение x2 не подсчитано");
+                }
+                if (Double.IsNegativeInfinity(x2))
+                {
+                    throw new Exception("Решений нет.");
+                }
+                else return x2;
+            }
+            private set
+            {
+                x2 = value;
+            }
+        }
         #endregion
-
 
         #region Конструкторы
 
@@ -91,6 +122,9 @@ namespace QuadraticEquation
             A = a;
             B = b;
             C = c;
+            X1 = Double.PositiveInfinity;
+            X2 = Double.PositiveInfinity;
+
         }
 
         /// <summary>
@@ -101,29 +135,44 @@ namespace QuadraticEquation
         /// <param name="c">параметр "с"</param>
         public QuadraticEq(double a, double b, double c)
         {
-            A = a.ToString();
-            B = b.ToString();
-            C = c.ToString();
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            X1 = Double.PositiveInfinity;
+            X2 = Double.PositiveInfinity;
         }
         #endregion
 
         #region Методы
 
         /// <summary>
-        /// Вычисляет корни квадратного уравнения.
+        /// Вычисляет корни уравнения второй степени.
         /// </summary>
         /// <returns>Строковое представление результата вычислений.</returns>
         public string CalculateRoot()
         {
-            if ((a == 0) && (b == 0) && (c == 0)) return Answer = "X - любое число";
-            if ((a == 0) && (b == 0)) return Answer = "Решений нет";
-            if (a == 0) return Answer = String.Format("X={0:0.####}", X1=Convert.ToString(-c / b)); //Возвращаем форматированный результат, предварительно записав его в автосвойство Answer.
+            if ((a == 0) && (b == 0) && (c == 0))
+            {
+                X1 = 0;
+                X2 = 0;
+                return "X - любое число";
+            }
+            if ((a == 0) && (b == 0))
+            {
+                X1 = Double.NegativeInfinity;
+                X2 = Double.NegativeInfinity;
+                return "Решений нет";
+            }
+            if (a == 0)
+            {
+                return String.Format("X={0}", X1 = (-c / b)); //Возвращаем форматированный результат, предварительно записав его в автосвойство Answer.
+            }
             double Discriminant = b * b - 4 * a * c;
-            if (Discriminant > 0) return Answer = String.Format("Х1={0:0.####} Х2={1:0.####}", X1=Convert.ToString(((-b + Math.Sqrt(Discriminant)) / (2 * a))), X2=Convert.ToString(((-b - Math.Sqrt(Discriminant)) / (2 * a)))); //Параметры метода "Format": 1 параметр - шаблон форматирования, 2 параметр - первый корень уравнения, 3 параметр - второй корень уравнения.
+            if (Discriminant > 0) return String.Format("Х1={0} \nХ2={1}", X1 = ((-b + Math.Sqrt(Discriminant)) / (2 * a)), X2 = ((-b - Math.Sqrt(Discriminant)) / (2 * a))); //Параметры метода "Format": 1 параметр - шаблон форматирования, 2 параметр - первый корень уравнения, 3 параметр - второй корень уравнения.
             else
             {
-                if (Discriminant == 0) return Answer = String.Format("Х1={0:0.####}", X1 = Convert.ToString((-b / (2 * a))));
-                else return Answer = "Решений нет";
+                if (Discriminant == 0) return String.Format("Х1={0}", X1 = X2 = (-b / (2 * a)));
+                else return "Решений нет";
             }
         }
         #endregion

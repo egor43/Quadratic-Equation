@@ -1,4 +1,4 @@
-﻿using System.Windows;
+﻿ using System.Windows;
 using QuadraticEquation;
 using System;
 
@@ -27,7 +27,10 @@ namespace Solution_quadratic_equation
             try
             {
                 QuadraticEq KvUr = new QuadraticEq(tbA.Text, tbB.Text, tbC.Text); //Через конструктор нициализируем поля экземпляра класса. 
-                tbAnswer.Text=KvUr.CalculateRoot();
+                tbAnswer.Text=KvUr.X1.ToString();
+                tbAnswer.Text = KvUr.CalculateRoot();
+                //tbAnswer.Text = KvUr.X2.ToString();
+
             }
             catch (Exception ex) //Возникает в случае попытки ввода неверного значения в поле. 
             {

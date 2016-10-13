@@ -9,3 +9,9 @@ C:\Users\egor4_000\Desktop\Егор\GitRepository\Quadratic-Equation\Solution qu
 C:\Users\egor4_000\Desktop\Егор\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.pdb
 D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\bin\Debug\QuadraticEquation.XML
 D:\Egor\GitRepository\Quadratic-Equation\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.csprojResolveAssemblyReference.cache
+E:\Егор\ООП\Quadratic-Equation-master\Solution quadratic equation\QuadraticEquation\bin\Debug\QuadraticEquation.XML
+E:\Егор\ООП\Quadratic-Equation-master\Solution quadratic equation\QuadraticEquation\bin\Debug\QuadraticEquation.dll
+E:\Егор\ООП\Quadratic-Equation-master\Solution quadratic equation\QuadraticEquation\bin\Debug\QuadraticEquation.pdb
+E:\Егор\ООП\Quadratic-Equation-master\Solution quadratic equation\QuadraticEquation\obj\Debug\ResolveAssemblyReference.cache
+E:\Егор\ООП\Quadratic-Equation-master\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.dll
+E:\Егор\ООП\Quadratic-Equation-master\Solution quadratic equation\QuadraticEquation\obj\Debug\QuadraticEquation.pdb
